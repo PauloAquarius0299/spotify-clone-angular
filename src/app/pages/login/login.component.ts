@@ -3,9 +3,10 @@ import { SpotifyService } from '../../services/spotify.service';
 
 
 @Component({
-  selector: 'app-login.module.ts',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+    selector: 'app-login.module.ts',
+    templateUrl: './login.component.html',
+    styleUrls: ['./login.component.scss'],
+    standalone: false
 })
 export class LoginComponent implements OnInit {
 
