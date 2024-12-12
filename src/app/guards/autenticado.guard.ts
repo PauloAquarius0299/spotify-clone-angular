@@ -31,8 +31,6 @@ export class AutenticadoGuard implements CanLoad {
       else
         res(this.naoAutenticado());
     })
-
-    return true;
   }
 
   naoAutenticado(){
