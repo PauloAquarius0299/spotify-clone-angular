@@ -6,6 +6,7 @@ import { PlayerRotas } from './player.routes';
 import { SidebarEsquerdoComponent } from '../../components/sidebar-esquerdo/sidebar-esquerdo.component';
 import { ButtonMenuComponent } from '../../components/button-menu/button-menu.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { UserScrollComponent } from '../../components/user-scroll/user-scroll.component';
 
 @NgModule({
   imports: [
@@ -14,6 +15,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     FontAwesomeModule,
     SidebarEsquerdoComponent,
     ButtonMenuComponent,
+    UserScrollComponent
   ],
   declarations: [
     PlayerComponent,

@@ -5,10 +5,16 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faHome, faSearch, faGuitar, faMusic } from '@fortawesome/free-solid-svg-icons';
 import { IPlaylist } from '../../Interfaces/IPlaylist';
 import { CommonModule } from '@angular/common';
+import { UserScrollComponent } from '../user-scroll/user-scroll.component';
 
 @Component({
   selector: 'app-sidebar-esquerdo',
-  imports: [ButtonMenuComponent, FontAwesomeModule, CommonModule],
+  imports: [
+    ButtonMenuComponent, 
+    FontAwesomeModule, 
+    UserScrollComponent,
+    CommonModule
+  ],
   standalone: true,
   templateUrl: './sidebar-esquerdo.component.html',
   styleUrls: ['./sidebar-esquerdo.component.scss']
