@@ -4,8 +4,9 @@ import { ButtonMenuComponent } from "../button-menu/button-menu.component";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faHome, faSearch, faGuitar, faMusic } from '@fortawesome/free-solid-svg-icons';
 import { IPlaylist } from '../../Interfaces/IPlaylist';
-import { CommonModule } from '@angular/common';
 import { UserScrollComponent } from '../user-scroll/user-scroll.component';
+import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-sidebar-esquerdo',
@@ -29,7 +30,10 @@ export class SidebarEsquerdoComponent implements OnInit {
   artistaIcon = faGuitar;
   playlistIcon = faMusic;
 
-  constructor(private service: SpotifyService) {}
+  constructor(
+    private service: SpotifyService,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
     this.buscarPlaylists();
@@ -40,6 +44,7 @@ export class SidebarEsquerdoComponent implements OnInit {
 
   botaoClick(botao: string): void {
     this.menuSelecionado = botao;
+    this.router.navigateByUrl('/player/home');
   }
 
   async buscarPlaylists(): Promise<void> {

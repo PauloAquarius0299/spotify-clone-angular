@@ -7,6 +7,8 @@ import { SidebarEsquerdoComponent } from '../../components/sidebar-esquerdo/side
 import { ButtonMenuComponent } from '../../components/button-menu/button-menu.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { UserScrollComponent } from '../../components/user-scroll/user-scroll.component';
+import { HomeComponent } from "../home/home.component";
+import { TopArtistaComponent } from '../../components/top-artista/top-artista.component';
 
 @NgModule({
   imports: [
@@ -15,8 +17,10 @@ import { UserScrollComponent } from '../../components/user-scroll/user-scroll.co
     FontAwesomeModule,
     SidebarEsquerdoComponent,
     ButtonMenuComponent,
-    UserScrollComponent
-  ],
+    UserScrollComponent,
+    HomeComponent,
+    TopArtistaComponent
+],
   declarations: [
     PlayerComponent,
   ],
