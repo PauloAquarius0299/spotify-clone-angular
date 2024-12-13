@@ -4,12 +4,16 @@ import { PlayerComponent } from './player.component';
 import { RouterModule } from '@angular/router';
 import { PlayerRotas } from './player.routes';
 import { SidebarEsquerdoComponent } from '../../components/sidebar-esquerdo/sidebar-esquerdo.component';
+import { ButtonMenuComponent } from '../../components/button-menu/button-menu.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule.forChild(PlayerRotas),
-    SidebarEsquerdoComponent
+    SidebarEsquerdoComponent,
+    ButtonMenuComponent,
+    FontAwesomeModule,
   ],
   declarations: [PlayerComponent]
 })

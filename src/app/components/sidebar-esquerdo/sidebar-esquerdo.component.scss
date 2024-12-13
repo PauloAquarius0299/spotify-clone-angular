@@ -24,13 +24,26 @@ $h-footer-user: 70px;
     .image-container {
       min-height: $h-spotify-logo;
       display: flex;
-      align-items: center; /* Centraliza verticalmente */
-      justify-content: flex-start; /* Alinha à esquerda */
+      align-items: center;
+      justify-content: flex-start;
       padding: 10px 0;
 
       img {
-        width: 100%; /* Ajuste para o tamanho pequeno */
-        height: auto; /* Mantém a proporção */
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .menu-container{
+      width: 100%;
+
+      &.opcoes {
+        min-height: $h-menu-opcoes;
+        flex-direction: column;
+
+        *{
+          margin-bottom: $m-entre-menus;
+        }
       }
     }
   }
