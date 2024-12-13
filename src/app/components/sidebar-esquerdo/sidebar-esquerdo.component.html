@@ -4,15 +4,43 @@
   </div>
 
   <div class='menu-container flex opcoes'>
-    <app-button-menu [descricao]="'Home'">
-
+    <app-button-menu 
+    [descricao]="'Home'" 
+    [selecionado]="menuSelecionado === 'Home'"
+    (click)="botaoClick('Home')"
+    >
+      <fa-icon [icon]="homeIcon"></fa-icon>
     </app-button-menu>
-    <app-button-menu [descricao]="'Pesquisar'">
-
+    <app-button-menu 
+    [descricao]="'Pesquisar'"
+    [selecionado]="menuSelecionado === 'Pesquisar'"
+    (click)="botaoClick('Pesquisar')"
+    >
+      <fa-icon [icon]="pesquisarIcon"></fa-icon>
     </app-button-menu>
-    <app-button-menu [descricao]="'Artistas'">
-
+    <app-button-menu 
+    [descricao]="'Artistas'"
+    [selecionado]="menuSelecionado === 'Artistas'"
+    (click)="botaoClick('Artistas')"
+    >
+      <fa-icon [icon]="artistaIcon"></fa-icon>
     </app-button-menu>
+  </div>
+
+  <div class="menu-container flex">
+    <span class="playlist-titulo">
+      PLAYLISTS
+    </span>
+
+    <div class="playlist-scroll">
+      <app-button-menu
+      [descricao]="'Play1'"
+      [selecionado]="menuSelecionado === 'Play1'"
+      (click)="botaoClick('Play1')"
+      >
+        <fa-icon [icon]="playlistIcon"></fa-icon>
+      </app-button-menu>
+    </div>
   </div>
 </div>
 <div class='usuario-info'>

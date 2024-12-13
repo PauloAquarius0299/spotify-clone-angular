@@ -11,10 +11,12 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   imports: [
     CommonModule,
     RouterModule.forChild(PlayerRotas),
+    FontAwesomeModule,
     SidebarEsquerdoComponent,
     ButtonMenuComponent,
-    FontAwesomeModule,
   ],
-  declarations: [PlayerComponent]
+  declarations: [
+    PlayerComponent,
+  ],
 })
 export class PlayerModule { }
