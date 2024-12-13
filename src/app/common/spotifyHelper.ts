@@ -13,6 +13,6 @@ export function SpotifyPlaylistParaPlalist(playlist: SpotifyApi.PlaylistObjectSi
   return {
     id: playlist.id,
     nome: playlist.name,
-    imagemUrl: playlist.images.pop().url
-  }
+    imagemUrl: playlist.images.length > 0 ? playlist.images[playlist.images.length - 1].url : ''
+  };
 }

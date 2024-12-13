@@ -34,9 +34,10 @@
 
     <div class="playlist-scroll">
       <app-button-menu
-      [descricao]="'Play1'"
-      [selecionado]="menuSelecionado === 'Play1'"
-      (click)="botaoClick('Play1')"
+      *ngFor="let playlist of playlists"
+      [descricao]="playlist.nome"
+      [selecionado]="menuSelecionado === playlist.id"
+      (click)="botaoClick(playlist.id)"
       >
         <fa-icon [icon]="playlistIcon"></fa-icon>
       </app-button-menu>
