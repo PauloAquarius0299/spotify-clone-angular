@@ -45,13 +45,11 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
   async obterMusicas(){
     this.musicas = await this.service.buscarMusicas();
-    console.log(this.musicas);
   }
 
   obterMusicaAtual(){
     const sub = this.servicePlayer.musicaAtual.subscribe(musica => {
       this.musicaAtual = musica;
-      console.log('musica atuallll ', this.musicaAtual);
     });
 
     this.subs.push(sub);

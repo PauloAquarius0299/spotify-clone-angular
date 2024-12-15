@@ -8,7 +8,6 @@ import { UserScrollComponent } from '../user-scroll/user-scroll.component';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
-
 @Component({
   selector: 'app-sidebar-esquerdo',
   imports: [
@@ -51,7 +50,6 @@ export class SidebarEsquerdoComponent implements OnInit {
   async buscarPlaylists(): Promise<void> {
     try {
       this.playlists = await this.service.buscarPlaylistUsuario();
-      console.log(this.playlists);
     } catch (error) {
       console.error('Erro ao buscar playlists:', error);
     }

@@ -24,8 +24,6 @@ export class TopArtistaComponent implements OnInit {
 
     if(!!artistas)
       this.artistas = artistas.pop();
-
-    console.log(this.artistas)
   }
 
 }

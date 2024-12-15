@@ -10,6 +10,9 @@ import { UserScrollComponent } from '../../components/user-scroll/user-scroll.co
 import { HomeComponent } from "../home/home.component";
 import { TopArtistaComponent } from '../../components/top-artista/top-artista.component';
 import { SidebarDireitoComponent } from '../../components/sidebar-direito/sidebar-direito.component';
+import { BuscasRecentesComponent } from '../../components/buscas-recentes/buscas-recentes.component';
+import { FormsModule } from '@angular/forms';
+import { ArtistaItemImagemComponent } from '../../components/artista-item-imagem/artista-item-imagem.component';
 
 @NgModule({
   imports: [
@@ -21,7 +24,10 @@ import { SidebarDireitoComponent } from '../../components/sidebar-direito/sideba
     UserScrollComponent,
     HomeComponent,
     TopArtistaComponent,
-    SidebarDireitoComponent
+    SidebarDireitoComponent,
+    BuscasRecentesComponent,
+    ArtistaItemImagemComponent,
+    FormsModule
 ],
   declarations: [
     PlayerComponent,
