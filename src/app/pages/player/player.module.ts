@@ -13,6 +13,7 @@ import { SidebarDireitoComponent } from '../../components/sidebar-direito/sideba
 import { BuscasRecentesComponent } from '../../components/buscas-recentes/buscas-recentes.component';
 import { FormsModule } from '@angular/forms';
 import { ArtistaItemImagemComponent } from '../../components/artista-item-imagem/artista-item-imagem.component';
+import { TopMaioresArtistasComponent } from '../../components/top-maiores-artistas/top-maiores-artistas.component';
 
 @NgModule({
   imports: [
@@ -27,6 +28,7 @@ import { ArtistaItemImagemComponent } from '../../components/artista-item-imagem
     SidebarDireitoComponent,
     BuscasRecentesComponent,
     ArtistaItemImagemComponent,
+    TopMaioresArtistasComponent,
     FormsModule
 ],
   declarations: [

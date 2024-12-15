@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
+import { EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-artista-item-imagem',
@@ -7,5 +8,15 @@ import { Component } from '@angular/core';
   styleUrl: './artista-item-imagem.component.scss'
 })
 export class ArtistaItemImagemComponent {
+
+  @Input()
+  imagemSrc = '';
+
+  @Output()
+  click = new EventEmitter<void>();
+
+  onClick(){
+    this.click.emit();
+  }
 
 }
