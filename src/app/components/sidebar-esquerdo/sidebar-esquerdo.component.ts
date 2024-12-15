@@ -8,11 +8,12 @@ import { UserScrollComponent } from '../user-scroll/user-scroll.component';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
+
 @Component({
   selector: 'app-sidebar-esquerdo',
   imports: [
-    ButtonMenuComponent, 
-    FontAwesomeModule, 
+    ButtonMenuComponent,
+    FontAwesomeModule,
     UserScrollComponent,
     CommonModule
   ],
