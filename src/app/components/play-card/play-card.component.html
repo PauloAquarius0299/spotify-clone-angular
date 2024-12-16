@@ -1,1 +1,14 @@
-<p>play-card works!</p>
+<div class="container card p-10">
+  <div class="image" [style.background-image]="'url(' + musica.album.imagemUrl + ')'" ></div>
+  <div class="controles">
+    <span>{{musica.titulo}}</span>
+    <div class="botoes">
+      <fa-icon [icon]="anteriorIcon"
+      (click)="voltarMusica()"
+      ></fa-icon>
+      <fa-icon [icon]="proximoIcon"
+      (click)="proximaMusica()"
+      ></fa-icon>
+    </div>
+  </div>
+</div>

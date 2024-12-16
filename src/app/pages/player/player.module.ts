@@ -14,6 +14,7 @@ import { BuscasRecentesComponent } from '../../components/buscas-recentes/buscas
 import { FormsModule } from '@angular/forms';
 import { ArtistaItemImagemComponent } from '../../components/artista-item-imagem/artista-item-imagem.component';
 import { TopMaioresArtistasComponent } from '../../components/top-maiores-artistas/top-maiores-artistas.component';
+import { PlayCardComponent } from '../../components/play-card/play-card.component';
 
 @NgModule({
   imports: [
@@ -29,6 +30,7 @@ import { TopMaioresArtistasComponent } from '../../components/top-maiores-artist
     BuscasRecentesComponent,
     ArtistaItemImagemComponent,
     TopMaioresArtistasComponent,
+    PlayCardComponent,
     FormsModule
 ],
   declarations: [
