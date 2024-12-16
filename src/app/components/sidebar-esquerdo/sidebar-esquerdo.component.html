@@ -38,6 +38,7 @@
       [descricao]="playlist.nome"
       [selecionado]="menuSelecionado === playlist.id"
       (click)="botaoClick(playlist.id)"
+      (click)="irParaPlaylist(playlist.id)"
       >
         <fa-icon [icon]="playlistIcon"></fa-icon>
       </app-button-menu>

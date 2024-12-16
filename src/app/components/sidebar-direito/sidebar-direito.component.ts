@@ -17,7 +17,7 @@ export class SidebarDireitoComponent {
   pesquisaRecentes: string[] = [];
 
   pesquisasRecentes = [
-    'top Brasil', 'Top Global', 'Rock n Roll', 'Rap Hits', 'MPB classico'
+    'top Brasil', 'Rock n Roll', 'Rap Hits', 'MPB classico'
   ]
 
 }

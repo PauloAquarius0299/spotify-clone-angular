@@ -15,6 +15,8 @@ import { FormsModule } from '@angular/forms';
 import { ArtistaItemImagemComponent } from '../../components/artista-item-imagem/artista-item-imagem.component';
 import { TopMaioresArtistasComponent } from '../../components/top-maiores-artistas/top-maiores-artistas.component';
 import { PlayCardComponent } from '../../components/play-card/play-card.component';
+import { ListaMusicasComponent } from '../lista-musicas/lista-musicas.component';
+import { BannerComponent } from '../../components/banner/banner.component';
 
 @NgModule({
   imports: [
@@ -31,6 +33,8 @@ import { PlayCardComponent } from '../../components/play-card/play-card.componen
     ArtistaItemImagemComponent,
     TopMaioresArtistasComponent,
     PlayCardComponent,
+    ListaMusicasComponent,
+    BannerComponent,
     FormsModule
 ],
   declarations: [

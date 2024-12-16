@@ -47,9 +47,15 @@ export class SidebarEsquerdoComponent implements OnInit {
     this.router.navigateByUrl('/player/home');
   }
 
+  irParaPlaylist(playlistId: string){
+    this.menuSelecionado = playlistId;
+    this.router.navigateByUrl(`player/lista/playlist/${playlistId}`)
+  }
+
   async buscarPlaylists(): Promise<void> {
     try {
       this.playlists = await this.service.buscarPlaylistUsuario();
+      console.log(this.playlists);
     } catch (error) {
       console.error('Erro ao buscar playlists:', error);
     }
