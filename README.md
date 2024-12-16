@@ -1,4 +1,16 @@
 # SpotifyCloneAngular
+![Captura de Tela (400)](https://github.com/user-attachments/assets/e637c8bf-82c9-4eba-a5d9-df54df864c97)
+Projeto frontend clonando Spotify com Angular 17, Scss e TypeScript 
+## Introdução 
+Utilizei a API do Spotify Developer para integrar minha conta via token de acesso, criando diversos serviços HTTP para renderizar dados no frontend do projeto. Desenvolvi componentes reutilizáveis utilizando Angular 17, estilizados com SCSS, mantendo a interface o mais fiel possível ao design original da plataforma Spotify Web.
+
+Com TypeScript, escrevi um código mais robusto e tipado, reduzindo erros e melhorando a usabilidade e manutenção da aplicação.
+## Ferramentas 
+* TypeScript
+* AngularJs 17/18
+* Scss
+## Sopotify Dev Web
+Link: https://developer.spotify.com/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.11.
 
